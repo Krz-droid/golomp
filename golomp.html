@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Garłacz Pomorski</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom, #f0f9ff, #e0f7fa);
+      color: #333;
+    }
+
+    header {
+      background: #004d66;
+      color: white;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.5em;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      padding: 30px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card h3 {
+      margin: 15px;
+      font-size: 1.2em;
+      color: #004d66;
+    }
+
+    .card p {
+      margin: 0 15px 15px;
+      font-size: 0.95em;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #004d66;
+      color: white;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Garłacz Pomorski</h1>
+    <nav>
+      <a href="#">Strona główna</a>
+      <a href="#">Kolekcja</a>
+      <a href="#">Kontakt</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h2>Odmiany Garłacza Pomorskiego</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/07/Pomeranian_Pouter_white.jpg" alt="Garłacz biały">
+        <h3>Biały</h3>
+        <p>Najczęstsza odmiana, elegancka i czysta w wyglądzie.</p>
+      </div>
+      <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/Pomeranian_Pouter_black.jpg" alt="Garłacz czarny">
+        <h3>Czarny</h3>
+        <p>Intensywne czarne upierzenie, efektowny kontrast.</p>
+      </div>
+      <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Pomeranian_Pouter_blue.jpg" alt="Garłacz niebieski">
+        <h3>Niebieski</h3>
+        <p>Jasnoniebieskie upierzenie z charakterystycznym rysunkiem.</p>
+      </div>
+      <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/52/Pomeranian_Pouter_red.jpg" alt="Garłacz czerwony">
+        <h3>Czerwony</h3>
+        <p>Rzadka odmiana o mocnym, przyciągającym uwagę kolorze.</p>
+      </div>
+      <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c0/Pomeranian_Pouter_yellow.jpg" alt="Garłacz żółty">
+        <h3>Żółty</h3>
+        <p>Ciepły, jasny kolor wyróżniający się w kolekcjach.</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 Garłacze Pomorskie
+  </footer>
+</body>
+</html>
